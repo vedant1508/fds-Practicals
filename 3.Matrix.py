@@ -14,10 +14,7 @@ for i in range(r):
     for j in range(c):
         num=int(input())
         b[i].append(num)
-for i in range (r):
-    for j in range(c):
-        print(b[i][j],end=" ")
-    print()
+
 def add():
     sum=[]
     for i in range(r):

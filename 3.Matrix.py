@@ -38,7 +38,7 @@ def subtract():
             print(sub[i][j],end=" ")
         print()
 def multiply():
-    result=[[0,0,0],[0,0,0],[0,0,0]]
+    result=[[0]*r for i in range(c)]
     for i in range(r):
         for j in range(c):
             for k in range(r):
@@ -47,7 +47,7 @@ def multiply():
     for i in result:
         print(i)
 def transpose():
-    result=[[0,0,0],[0,0,0],[0,0,0]]
+    result=[[0]*r for i in range(c)]
     for i in range(len(a)):
         for j in range(len(a[0])):
             result[j][i]=a[i][j]
